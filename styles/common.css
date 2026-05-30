@@ -74,7 +74,7 @@
 
 .header__logo img {
   width: 100%;
-  max-width: 200px;
+  max-width: 96px;
   height: auto;
 }
 
@@ -434,3 +434,23 @@
     padding: 64px 20px 56px;
   }
 }
+
+/* ─── YELLOW ACCENT OVERRIDES ───────────────────────
+   When --color-accent is yellow (#F8CB3D), all text
+   on accent-colored backgrounds must be dark/black.
+   ─────────────────────────────────────────────────── */
+
+/* Topbar */
+.topbar__item { color: var(--color-on-accent); }
+.topbar__item svg { fill: var(--color-on-accent); }
+.topbar__item--separator { color: rgba(0,0,0,0.35); }
+
+/* Nav dropdown hover */
+.nav-dropdown__link:hover { color: var(--color-on-accent); }
+
+/* Header CTA button */
+.btn-quote { color: var(--color-on-accent); }
+
+/* Mobile hamburger */
+.hamburger { background: var(--color-accent); color: var(--color-on-accent); }
+.hamburger svg { fill: var(--color-on-accent); }

@@ -753,3 +753,37 @@
   background: var(--color-accent);
   color: var(--color-white);
 }
+
+/* ─── YELLOW ACCENT OVERRIDES (inner-pages.css) ─────
+   Text on var(--color-accent) backgrounds → black.
+   ─────────────────────────────────────────────────── */
+
+/* Service detail CTA button */
+.svc-detail__btn { color: var(--color-on-accent); }
+.svc-detail__btn:hover { color: var(--color-accent); }
+.svc-detail__sidebar-link:hover,
+.svc-detail__sidebar-link--active { color: var(--color-accent); }
+
+/* Contact section form panel (yellow background) */
+.contact-section__form-heading { color: var(--color-on-accent); }
+.contact-section__input,
+.contact-section__textarea {
+  color: var(--color-on-accent);
+  border-bottom-color: rgba(0,0,0,0.3);
+}
+.contact-section__input::placeholder,
+.contact-section__textarea::placeholder { color: rgba(0,0,0,0.45); }
+.contact-section__input:focus,
+.contact-section__textarea:focus { border-bottom-color: rgba(0,0,0,0.7); }
+.contact-section__form-wrap::after {
+  background-image:
+    repeating-linear-gradient(90deg, rgba(0,0,0,0.2) 0px, rgba(0,0,0,0.2) 6px, transparent 6px, transparent 12px),
+    repeating-linear-gradient(90deg, rgba(0,0,0,0.2) 0px, rgba(0,0,0,0.2) 6px, transparent 6px, transparent 12px),
+    repeating-linear-gradient(180deg, rgba(0,0,0,0.2) 0px, rgba(0,0,0,0.2) 6px, transparent 6px, transparent 12px),
+    repeating-linear-gradient(180deg, rgba(0,0,0,0.2) 0px, rgba(0,0,0,0.2) 6px, transparent 6px, transparent 12px);
+}
+/* Submit button on yellow bg: white bg with accent text = yellow-on-white → use dark */
+.contact-section__submit { color: var(--color-dark); }
+
+/* Not-found buttons on accent hover */
+.not-found__btn--outline:hover { color: var(--color-on-accent); }

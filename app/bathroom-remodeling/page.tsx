@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import PageHeroSection from "@/components/custom/page-hero/PageHeroSection";
 import ServiceDetailSection from "@/components/custom/service-detail/ServiceDetailSection";
+import CTAFormSection from "@/components/custom/cta/CTAFormSection";
+import AboutSection from "@/components/custom/about/AboutSection";
+import TestimonialsSection from "@/components/custom/testimonials/TestimonialsSection";
 
 export const metadata: Metadata = {
   title: "Bathroom Remodeling",
-  description: "Custom bathroom renovations built to your specifications — full demo to studs, waterproofing, custom tile, and all-new fixtures. Free estimates across Queens, Brooklyn, Nassau & Suffolk.",
+  description:
+    "Full bathroom renovations — tile, vanities, fixtures, tub-to-shower conversions, and waterproofing. Free written estimates. Queens, Brooklyn, Nassau & Suffolk.",
 };
 
 export default function BathroomRemodelingPage() {
@@ -12,8 +16,12 @@ export default function BathroomRemodelingPage() {
     <main>
       <PageHeroSection
         title="Bathroom Remodeling"
-        subtitle="Custom bathroom renovations from the studs up — proper waterproofing, custom tile, and all-new fixtures. Free written estimates."
-        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Services", href: "/services-page" }, { label: "Bathroom Remodeling" }]}
+        subtitle="Complete bathroom renovations from demo to finish. Free written estimates. Serving Queens, Brooklyn, Nassau, Suffolk & Westchester."
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Services", href: "/services-page" },
+          { label: "Bathroom Remodeling" },
+        ]}
       />
       <ServiceDetailSection
         sidebarImage="https://www.phr-ny.com/images/bathroom_carousel_1.jpg"
@@ -22,25 +30,29 @@ export default function BathroomRemodelingPage() {
         activeService="Bathroom Remodeling"
         heading="Bathroom Remodeling in Queens, Brooklyn & Long Island"
         intro={[
-          "A proper bathroom renovation starts with proper waterproofing — and that means going down to the studs. Professional Home Remodeling Inc. builds every bathroom from the framing out, with commercial-grade waterproofing, custom tile, and fixtures installed clean.",
-          "We handle full bathroom gut renovations and targeted upgrades across Queens, Brooklyn, Nassau County, Suffolk County, the Bronx, and Westchester. Free written estimate before any work begins.",
+          "From a simple refresh to a full gut renovation, Professional Home Remodeling Inc. delivers beautiful, functional bathrooms across the New York metro area. We work with your layout and budget to design a space that fits your lifestyle.",
+          "Every bathroom project includes a free written estimate. We handle complete demo, waterproofing, tile, fixtures, and finish — no subcontractors, no surprises.",
         ]}
         whatWeDo={[
-          "Full demolition to the studs with proper waterproofing",
-          "Custom tile installation — shower walls, floors, and surrounds",
-          "New tubs, showers, toilets, vanities, and medicine cabinets",
-          "Backer board, cement board, and waterproof membrane installation",
-          "Exhaust fan replacement and lighting upgrades",
-          "All debris hauled off-site, work area left clean",
+          "Free in-home consultation and written estimate",
+          "Full demolition and waterproofing",
+          "Custom tile work — floors, walls, and shower surrounds",
+          "Vanity, sink, toilet, and fixture installation",
+          "Tub-to-shower conversions",
+          "New lighting and ventilation",
+          "Finish paint and debris removal",
         ]}
         whyChooseUs={[
-          "We don't cut corners on waterproofing — every bathroom is built to last",
-          "Deal directly with the owner throughout the entire project",
-          "40+ years serving the New York metro area",
-          "Licensed and insured in NYC, Nassau, Suffolk, and Westchester",
-          "A+ BBB Rating — most clients come through referrals",
+          "Deal directly with the owner on every project",
+          "40+ years of bathroom renovation experience",
+          "Licensed in NYC, Nassau, Suffolk, and Westchester",
+          "A+ BBB Rating — trusted by thousands of homeowners",
+          "Senior, veteran, and teacher discounts available",
         ]}
       />
+      <CTAFormSection />
+      <AboutSection />
+      <TestimonialsSection />
     </main>
   );
 }

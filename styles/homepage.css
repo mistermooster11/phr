@@ -1892,3 +1892,59 @@
   /* Footer */
   .footer__legal { flex-direction: column; align-items: center; gap: 6px; }
 }
+
+/* ─── YELLOW ACCENT OVERRIDES (homepage.css) ────────
+   Text on var(--color-accent) backgrounds → black.
+   ─────────────────────────────────────────────────── */
+
+/* Hero primary button */
+.hero__btn-primary { color: var(--color-on-accent); }
+
+/* About section button + experience box */
+.about__btn { color: var(--color-on-accent); }
+.about__exp-box { color: var(--color-on-accent); }
+.about__exp-icon img { filter: brightness(0); }
+
+/* Service card hover state */
+.service-card:hover .service-card__title { color: var(--color-on-accent); }
+.service-card:hover .service-card__title::after { color: var(--color-on-accent); }
+
+/* Pricing badge + highlighted CTA button */
+.pricing-card__badge { color: var(--color-on-accent); }
+.pricing-card__btn--primary { color: var(--color-on-accent); }
+.pricing-card__btn--primary:hover { background: #d4a800; color: var(--color-on-accent); }
+
+/* Testimonial nav buttons hover */
+.testimonials__prev-btn:hover,
+.testimonials__next-btn:hover { color: var(--color-on-accent) !important; }
+
+/* Blog buttons + date badge */
+.blog__view-btn { color: var(--color-on-accent); }
+.blog-card__date { color: var(--color-on-accent); }
+
+/* Need-services CTA button */
+.need-services__btn { color: var(--color-on-accent); }
+
+/* CTA form LEFT panel (yellow background) */
+.cta-form__left .cta-form__eyebrow { color: var(--color-on-accent); }
+.cta-form__left .cta-form__heading { color: var(--color-on-accent); }
+.cta-form__left .cta-form__subtext { color: rgba(0,0,0,0.7); }
+.cta-form__input,
+.cta-form__textarea {
+  color: var(--color-on-accent);
+  border-bottom-color: rgba(0,0,0,0.3);
+}
+.cta-form__input::placeholder,
+.cta-form__textarea::placeholder { color: rgba(0,0,0,0.45); }
+.cta-form__input:focus,
+.cta-form__textarea:focus { border-bottom-color: rgba(0,0,0,0.7); }
+/* Dashed inner border frame — use dark dashes on yellow */
+.cta-form__left::after {
+  background-image:
+    repeating-linear-gradient(90deg, rgba(0,0,0,0.2) 0px, rgba(0,0,0,0.2) 6px, transparent 6px, transparent 12px),
+    repeating-linear-gradient(90deg, rgba(0,0,0,0.2) 0px, rgba(0,0,0,0.2) 6px, transparent 6px, transparent 12px),
+    repeating-linear-gradient(180deg, rgba(0,0,0,0.2) 0px, rgba(0,0,0,0.2) 6px, transparent 6px, transparent 12px),
+    repeating-linear-gradient(180deg, rgba(0,0,0,0.2) 0px, rgba(0,0,0,0.2) 6px, transparent 6px, transparent 12px);
+}
+/* Submit button: white bg, accent text — prevent yellow-on-white invisibility */
+.cta-form__submit { color: var(--color-dark); }

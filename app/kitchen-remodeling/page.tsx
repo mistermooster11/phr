@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import PageHeroSection from "@/components/custom/page-hero/PageHeroSection";
 import ServiceDetailSection from "@/components/custom/service-detail/ServiceDetailSection";
+import CTAFormSection from "@/components/custom/cta/CTAFormSection";
+import AboutSection from "@/components/custom/about/AboutSection";
+import TestimonialsSection from "@/components/custom/testimonials/TestimonialsSection";
 
 export const metadata: Metadata = {
   title: "Kitchen Remodeling",
@@ -47,6 +50,9 @@ export default function KitchenRemodelingPage() {
           "Discounts for seniors, veterans, and teachers",
         ]}
       />
+      <CTAFormSection />
+      <AboutSection />
+      <TestimonialsSection />
     </main>
   );
 }

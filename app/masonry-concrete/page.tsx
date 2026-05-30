@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import PageHeroSection from "@/components/custom/page-hero/PageHeroSection";
 import ServiceDetailSection from "@/components/custom/service-detail/ServiceDetailSection";
+import CTAFormSection from "@/components/custom/cta/CTAFormSection";
+import AboutSection from "@/components/custom/about/AboutSection";
+import TestimonialsSection from "@/components/custom/testimonials/TestimonialsSection";
 
 export const metadata: Metadata = {
   title: "Masonry & Concrete",
-  description: "Professional masonry and concrete work across Queens, Brooklyn, Nassau, Suffolk & Westchester. Stoops, steps, retaining walls, driveways, and more. Free estimates.",
+  description:
+    "Brick, block, and concrete work — stoops, driveways, retaining walls, and more. Free written estimates. Serving Queens, Brooklyn, Nassau & Suffolk.",
 };
 
 export default function MasonryPage() {
@@ -12,35 +16,43 @@ export default function MasonryPage() {
     <main>
       <PageHeroSection
         title="Masonry & Concrete"
-        subtitle="Professional masonry and concrete work — stoops, steps, retaining walls, driveways, and more. Free written estimates."
-        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Services", href: "/services-page" }, { label: "Masonry & Concrete" }]}
+        subtitle="Brick, block, and concrete work for homes across the New York metro area. Free written estimates. Serving Queens, Brooklyn, Nassau, Suffolk & Westchester."
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Services", href: "/services-page" },
+          { label: "Masonry & Concrete" },
+        ]}
       />
       <ServiceDetailSection
         sidebarImage="https://www.phr-ny.com/images/masonry_carousel_1.jpg"
         sidebarImageWidth={535}
         sidebarImageHeight={400}
         activeService="Masonry & Concrete"
-        heading="Masonry & Concrete in Queens, Brooklyn & Long Island"
+        heading="Masonry & Concrete Work in Queens, Brooklyn & Long Island"
         intro={[
-          "Professional Home Remodeling Inc. handles masonry and concrete work from stoops and front steps to retaining walls, patios, driveways, and foundation repairs across the New York metro area.",
-          "Every masonry project gets the same standard as our interior work — proper prep, quality materials, and a clean finish. Free written estimate before any work begins.",
+          "From stoops and driveways to retaining walls and brick pointing, Professional Home Remodeling Inc. delivers quality masonry and concrete work across the New York metro area. Our crews have over 40 years of experience working with brick, block, concrete, and natural stone.",
+          "Every masonry project starts with a free written estimate. We handle everything from design through final cleanup.",
         ]}
         whatWeDo={[
-          "Stoop and front step installation and repair",
-          "Retaining wall construction and repair",
-          "Patio and walkway installation",
-          "Concrete driveway installation and resurfacing",
-          "Foundation crack repair and waterproofing",
-          "Brick and block pointing and repointing",
+          "Brick pointing and repointing",
+          "Stoop, step, and entryway repair and replacement",
+          "Driveway and walkway installation",
+          "Retaining wall construction",
+          "Concrete flatwork and slab repair",
+          "Chimney repair and rebuilding",
+          "Free written estimate and debris removal",
         ]}
         whyChooseUs={[
-          "40+ years of masonry experience in the New York metro area",
+          "40+ years of masonry and concrete experience",
+          "Licensed in NYC, Nassau, Suffolk, and Westchester",
           "Deal directly with the owner on every project",
-          "Licensed and insured in NYC, Nassau, Suffolk, and Westchester",
-          "Free written estimate — no pressure, no obligation",
+          "A+ BBB Rating",
           "Senior, veteran, and teacher discounts available",
         ]}
       />
+      <CTAFormSection />
+      <AboutSection />
+      <TestimonialsSection />
     </main>
   );
 }

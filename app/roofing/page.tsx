@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import PageHeroSection from "@/components/custom/page-hero/PageHeroSection";
 import ServiceDetailSection from "@/components/custom/service-detail/ServiceDetailSection";
+import CTAFormSection from "@/components/custom/cta/CTAFormSection";
+import AboutSection from "@/components/custom/about/AboutSection";
+import TestimonialsSection from "@/components/custom/testimonials/TestimonialsSection";
 
 export const metadata: Metadata = {
   title: "Roofing",
-  description: "GAF Certified roof installations and repairs serving Queens, Brooklyn, Nassau, Suffolk, the Bronx, and Westchester. Free inspections. Emergency leak response available.",
+  description:
+    "GAF Certified roofing installations, repairs, and emergency leak response. Free written estimates. Serving Queens, Brooklyn, Nassau & Suffolk.",
 };
 
 export default function RoofingPage() {
@@ -12,35 +16,42 @@ export default function RoofingPage() {
     <main>
       <PageHeroSection
         title="Roofing"
-        subtitle="GAF Certified roof installations and repairs. Free inspections. Emergency leak response available across all service areas."
-        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Services", href: "/services-page" }, { label: "Roofing" }]}
+        subtitle="GAF Certified roofing installations and repairs. Emergency leak response. Free written estimates. Serving Queens, Brooklyn, Nassau, Suffolk & Westchester."
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Services", href: "/services-page" },
+          { label: "Roofing" },
+        ]}
       />
       <ServiceDetailSection
         sidebarImage="https://www.phr-ny.com/images/masonry_carousel_1.jpg"
         sidebarImageWidth={535}
         sidebarImageHeight={400}
         activeService="Roofing"
-        heading="Roofing in Queens, Brooklyn, Nassau & Long Island"
+        heading="Roofing in Queens, Brooklyn & Long Island"
         intro={[
-          "Professional Home Remodeling Inc. is a GAF Certified Installer serving Queens, Brooklyn, Nassau County, Suffolk County, the Bronx, and Westchester. We handle new roof installations, full replacements, and targeted repairs — all backed by manufacturer warranty.",
-          "If you have storm damage, we work directly with your insurance adjuster and provide full written documentation of all damage and completed work. Emergency roof leak response available.",
+          "Professional Home Remodeling Inc. is a GAF Certified roofing contractor serving the New York metro area for over 40 years. Whether you need a full roof replacement, storm damage repair, or a fast leak response, we bring the same level of craftsmanship and accountability to every job.",
+          "We work with asphalt shingles, flat roofing systems, and all major roofing materials. Every project starts with a free written estimate and includes complete cleanup.",
         ]}
         whatWeDo={[
-          "Free roof inspection and written estimate at no charge",
-          "GAF Certified installation with manufacturer-backed warranties",
-          "Full roof replacement — shingles, underlayment, and flashing",
-          "Emergency roof leak repair and storm damage response",
-          "Insurance claim documentation and adjuster coordination",
-          "Complete debris and old material removal",
+          "Full roof replacements — asphalt shingles and flat roofing",
+          "Storm damage repair and insurance claim assistance",
+          "Emergency leak response — fast same-week scheduling",
+          "Flashing, soffit, and fascia repair",
+          "Gutters and drainage solutions",
+          "Free written estimate and full debris removal",
         ]}
         whyChooseUs={[
-          "GAF Certified Installers — manufacturer warranties on every installation",
-          "Emergency leak response available across all service areas",
-          "We work directly with your insurance adjuster on storm claims",
-          "40+ years of roofing experience in the New York metro area",
-          "Licensed in NYC, Westchester, Nassau, and Suffolk County",
+          "GAF Certified — manufacturer-backed roofing warranty",
+          "Deal directly with the owner, not a call center",
+          "40+ years serving Queens, Brooklyn, Nassau & Suffolk",
+          "Licensed in NYC, Nassau, Suffolk, and Westchester",
+          "A+ BBB Rating",
         ]}
       />
+      <CTAFormSection />
+      <AboutSection />
+      <TestimonialsSection />
     </main>
   );
 }

@@ -65,7 +65,8 @@
   --color-primary: #FFF8F0;        /* warm off-white bg */
   --color-secondary: #000000;      /* black */
   --color-text: #3D3D3D;           /* body text */
-  --color-accent: #D0011B;         /* PHR red CTA */
+  --color-accent: #F8CB3D;         /* PHR yellow CTA */
+  --color-on-accent: #000000;      /* text on yellow backgrounds */
   --color-white: #FFFFFF;
   --color-dark: #1A1A1A;           /* near-black dark sections */
   --color-dark-2: #2A2A2A;         /* slightly lighter dark */

@@ -68,10 +68,10 @@ export default function Header() {
             <Image
               src="/images/phr-logo.png"
               alt="Professional Home Remodeling Inc."
-              width={200}
-              height={44}
+              width={96}
+              height={96}
               priority
-              style={{ width: "100%", maxWidth: 200, height: "auto" }}
+              style={{ width: "100%", maxWidth: 96, height: "auto" }}
             />
           </Link>
         </div>
