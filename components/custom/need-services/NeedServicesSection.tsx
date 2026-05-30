@@ -38,9 +38,14 @@ export default function NeedServicesSection() {
           Call for a free written estimate — 7 days a week. No obligation.
           
         </p>
-        <Link href="/contact-us" className="need-services__btn">
-          Get a Free Estimate
-        </Link>
+        <div className="need-services__btns">
+          <Link href="/contact-us" className="need-services__btn">
+            Get a Free Estimate
+          </Link>
+          <Link href="/contact-us" className="need-services__btn need-services__btn--outline">
+            Contact Now
+          </Link>
+        </div>
       </div>
     </section>
   );
