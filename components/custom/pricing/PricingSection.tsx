@@ -82,11 +82,10 @@ export default function PricingSection() {
       {/* Header */}
       <div className="pricing__header">
         <div className="pricing__label">Pricing</div>
-        <h2 className="pricing__heading">Request for intervention</h2>
+        <h2 className="pricing__heading">Transparent Starting Prices</h2>
         <p className="pricing__subtext">
           Starting prices for our most popular home remodeling services.
-          cleaning, emergency services, and ongoing maintenance — with no hidden fees
-          All work starts with a free written estimate — no obligation.
+          All work starts with a free written estimate — no obligation, no hidden fees.
         </p>
       </div>
 
@@ -112,6 +111,7 @@ export default function PricingSection() {
               )}
               <div className="pricing-card__body">
                 {/* Price */}
+                <div className="pricing-card__starting-at">Starting at</div>
                 <div className="pricing-card__price-row">
                   <span className="pricing-card__currency">$</span>
                   <span className="pricing-card__amount">{card.price}</span>

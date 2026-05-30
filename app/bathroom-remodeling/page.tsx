@@ -7,8 +7,7 @@ import TestimonialsSection from "@/components/custom/testimonials/TestimonialsSe
 
 export const metadata: Metadata = {
   title: "Bathroom Remodeling",
-  description:
-    "Full bathroom renovations — tile, vanities, fixtures, tub-to-shower conversions, and waterproofing. Free written estimates. Queens, Brooklyn, Nassau & Suffolk.",
+  description: "Full bathroom renovations — tile, vanities, fixtures, tub-to-shower conversions, and waterproofing. Free written estimates. Queens, Brooklyn, Nassau & Suffolk.",
 };
 
 export default function BathroomRemodelingPage() {
@@ -17,6 +16,7 @@ export default function BathroomRemodelingPage() {
       <PageHeroSection
         title="Bathroom Remodeling"
         subtitle="Complete bathroom renovations from demo to finish. Free written estimates. Serving Queens, Brooklyn, Nassau, Suffolk & Westchester."
+        bgImage="/images/gc-hero-bathroom.jpg"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services-page" },
@@ -24,7 +24,7 @@ export default function BathroomRemodelingPage() {
         ]}
       />
       <ServiceDetailSection
-        sidebarImage="https://www.phr-ny.com/images/bathroom_carousel_1.jpg"
+        sidebarImage="/images/gc-service-bathroom.jpg"
         sidebarImageWidth={535}
         sidebarImageHeight={400}
         activeService="Bathroom Remodeling"

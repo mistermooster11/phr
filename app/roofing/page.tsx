@@ -7,8 +7,7 @@ import TestimonialsSection from "@/components/custom/testimonials/TestimonialsSe
 
 export const metadata: Metadata = {
   title: "Roofing",
-  description:
-    "GAF Certified roofing installations, repairs, and emergency leak response. Free written estimates. Serving Queens, Brooklyn, Nassau & Suffolk.",
+  description: "GAF Certified roofing installations, repairs, and emergency leak response. Free written estimates. Serving Queens, Brooklyn, Nassau & Suffolk.",
 };
 
 export default function RoofingPage() {
@@ -17,6 +16,7 @@ export default function RoofingPage() {
       <PageHeroSection
         title="Roofing"
         subtitle="GAF Certified roofing installations and repairs. Emergency leak response. Free written estimates. Serving Queens, Brooklyn, Nassau, Suffolk & Westchester."
+        bgImage="/images/gc-hero-roofing.jpg"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services-page" },
@@ -24,7 +24,7 @@ export default function RoofingPage() {
         ]}
       />
       <ServiceDetailSection
-        sidebarImage="https://www.phr-ny.com/images/masonry_carousel_1.jpg"
+        sidebarImage="/images/gc-service-roofing.jpg"
         sidebarImageWidth={535}
         sidebarImageHeight={400}
         activeService="Roofing"

@@ -7,8 +7,7 @@ import TestimonialsSection from "@/components/custom/testimonials/TestimonialsSe
 
 export const metadata: Metadata = {
   title: "Basement Waterproofing",
-  description:
-    "Interior and exterior basement waterproofing, sump pump installation, and drainage solutions. Free written estimates. Queens, Brooklyn, Nassau & Suffolk.",
+  description: "Interior and exterior basement waterproofing, sump pump installation, and drainage solutions. Free written estimates. Queens, Brooklyn, Nassau & Suffolk.",
 };
 
 export default function BasementWaterproofingPage() {
@@ -17,6 +16,7 @@ export default function BasementWaterproofingPage() {
       <PageHeroSection
         title="Basement Waterproofing"
         subtitle="Interior and exterior waterproofing, sump pumps, and drainage systems. Emergency response for flooding. Free written estimates."
+        bgImage="/images/gc-hero-basement.jpg"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services-page" },
@@ -24,7 +24,7 @@ export default function BasementWaterproofingPage() {
         ]}
       />
       <ServiceDetailSection
-        sidebarImage="https://www.phr-ny.com/images/bathroom_carousel_1.jpg"
+        sidebarImage="/images/gc-service-bathroom.jpg"
         sidebarImageWidth={535}
         sidebarImageHeight={400}
         activeService="Basement Waterproofing"

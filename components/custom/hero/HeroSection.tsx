@@ -15,7 +15,7 @@ export default function HeroSection() {
 
     (async () => {
       const { gsap } = await import("gsap");
-      if (cancelled) return; // StrictMode unmounted before import resolved
+      if (cancelled) return;
 
       gsap.set([titleRef.current, dividerRef.current, descRef.current, buttonsRef.current], {
         opacity: 0,
@@ -51,41 +51,40 @@ export default function HeroSection() {
 
   return (
     <section className="hero">
-      {/* Video background */}
+      {/* Cloudflare Stream video — autoplay, muted, looped */}
       <div className="hero__video-bg">
-        <video
-          autoPlay
-          muted
-          playsInline
-          loop
-          poster="/wp-assets/Title-Background-Image-scaled.webp"
+        <iframe
+          src="https://customer-ip9lnkk65px0t3ak.cloudflarestream.com/9242315777814f6131e3bbea71750b10/iframe?autoplay=true&muted=true&loop=true&controls=false&preload=auto"
+          allow="autoplay; fullscreen"
+          allowFullScreen
           aria-hidden="true"
-        >
-          <source
-            src="https://www.phr-ny.com/images/kitchen_carousel_1.jpg"
-            
-          />
-        </video>
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            width: "100vw",
+            height: "56.25vw",
+            minHeight: "100%",
+            minWidth: "177.78vh",
+            transform: "translate(-50%, -50%)",
+            border: "none",
+            pointerEvents: "none",
+          }}
+        />
       </div>
 
       {/* Content */}
       <div className="hero__content">
         <h1 className="hero__title" ref={titleRef}>
-          
-          <br />
-          
-          <br />
-          Professional Home Remodeling — Queens, Brooklyn & Long Island
+          Professional Home Remodeling — Queens, Brooklyn &amp; Long Island
         </h1>
 
         <hr className="hero__divider" ref={dividerRef} />
 
         <p className="hero__description" ref={descRef}>
-          Expert kitchen remodeling, bathroom renovations, roofing, siding & masonry across
+          Expert kitchen remodeling, bathroom renovations, roofing, siding &amp; masonry across
           <br />
-          Queens, Brooklyn, Nassau County, Suffolk County, the Bronx & Westchester.
-          <br />
-          
+          Queens, Brooklyn, Nassau County, Suffolk County, the Bronx &amp; Westchester.
         </p>
 
         <div className="hero__buttons" ref={buttonsRef}>

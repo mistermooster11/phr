@@ -12,7 +12,7 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     slug: "/blog/how-to-plan-a-kitchen-remodel/",
-    image: "https://www.phr-ny.com/images/kitchen_carousel_1.jpg",
+    image: "/images/gc-blog-1.jpg",
     date: "15",
     monthYear: "Mar '26",
     category: "Kitchen Remodeling",
@@ -23,7 +23,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "/blog/signs-you-need-a-new-roof/",
-    image: "https://www.phr-ny.com/images/masonry_carousel_1.jpg",
+    image: "/images/gc-blog-2.jpg",
     date: "08",
     monthYear: "Mar '26",
     category: "Roofing",
@@ -34,7 +34,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "/blog/bathroom-remodel-mistakes/",
-    image: "https://www.phr-ny.com/images/bathroom_carousel_1.jpg",
+    image: "/images/gc-blog-2.jpg",
     date: "22",
     monthYear: "Feb '26",
     category: "Bathroom Remodeling",

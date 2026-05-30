@@ -7,8 +7,7 @@ import TestimonialsSection from "@/components/custom/testimonials/TestimonialsSe
 
 export const metadata: Metadata = {
   title: "Siding & Windows",
-  description:
-    "Vinyl, fiber cement, and wood siding installation. Energy-efficient window replacement. Free written estimates. Serving Queens, Brooklyn, Nassau & Suffolk.",
+  description: "Vinyl, fiber cement, and wood siding installation. Energy-efficient window replacement. Free written estimates. Serving Queens, Brooklyn, Nassau & Suffolk.",
 };
 
 export default function SidingWindowsPage() {
@@ -17,6 +16,7 @@ export default function SidingWindowsPage() {
       <PageHeroSection
         title="Siding & Windows"
         subtitle="Vinyl and fiber cement siding, energy-efficient window replacements. Free written estimates. Serving Queens, Brooklyn, Nassau, Suffolk & Westchester."
+        bgImage="/images/gc-hero-siding.jpg"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services-page" },
@@ -24,7 +24,7 @@ export default function SidingWindowsPage() {
         ]}
       />
       <ServiceDetailSection
-        sidebarImage="https://www.phr-ny.com/images/siding_carousel_1.jpg"
+        sidebarImage="/images/gc-service-siding.jpg"
         sidebarImageWidth={535}
         sidebarImageHeight={400}
         activeService="Siding & Windows"

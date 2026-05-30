@@ -7,8 +7,7 @@ import TestimonialsSection from "@/components/custom/testimonials/TestimonialsSe
 
 export const metadata: Metadata = {
   title: "Masonry & Concrete",
-  description:
-    "Brick, block, and concrete work — stoops, driveways, retaining walls, and more. Free written estimates. Serving Queens, Brooklyn, Nassau & Suffolk.",
+  description: "Brick, block, and concrete work — stoops, driveways, retaining walls, and more. Free written estimates. Serving Queens, Brooklyn, Nassau & Suffolk.",
 };
 
 export default function MasonryPage() {
@@ -17,6 +16,7 @@ export default function MasonryPage() {
       <PageHeroSection
         title="Masonry & Concrete"
         subtitle="Brick, block, and concrete work for homes across the New York metro area. Free written estimates. Serving Queens, Brooklyn, Nassau, Suffolk & Westchester."
+        bgImage="/images/gc-hero-masonry.jpg"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services-page" },
@@ -24,7 +24,7 @@ export default function MasonryPage() {
         ]}
       />
       <ServiceDetailSection
-        sidebarImage="https://www.phr-ny.com/images/masonry_carousel_1.jpg"
+        sidebarImage="/images/gc-service-roofing.jpg"
         sidebarImageWidth={535}
         sidebarImageHeight={400}
         activeService="Masonry & Concrete"

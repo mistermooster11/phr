@@ -7,8 +7,7 @@ import TestimonialsSection from "@/components/custom/testimonials/TestimonialsSe
 
 export const metadata: Metadata = {
   title: "Kitchen Remodeling",
-  description:
-    "Complete kitchen renovations from the studs up — custom cabinetry, granite or quartz countertops, tile backsplash, new flooring, sinks, faucets, and finish paint. Free estimates. Queens, Brooklyn, Nassau & Suffolk.",
+  description: "Complete kitchen renovations from the studs up — custom cabinetry, granite or quartz countertops, tile backsplash, new flooring, sinks, faucets, and finish paint. Free estimates. Queens, Brooklyn, Nassau & Suffolk.",
 };
 
 export default function KitchenRemodelingPage() {
@@ -17,6 +16,7 @@ export default function KitchenRemodelingPage() {
       <PageHeroSection
         title="Kitchen Remodeling"
         subtitle="Complete kitchen renovations — from design to final walkthrough. Free written estimates. Serving Queens, Brooklyn, Nassau, Suffolk & Westchester."
+        bgImage="/images/gc-hero-kitchen.jpg"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services-page" },
@@ -24,7 +24,7 @@ export default function KitchenRemodelingPage() {
         ]}
       />
       <ServiceDetailSection
-        sidebarImage="https://www.phr-ny.com/images/kitchen_carousel_1.jpg"
+        sidebarImage="/images/gc-service-kitchen.jpg"
         sidebarImageWidth={535}
         sidebarImageHeight={400}
         activeService="Kitchen Remodeling"

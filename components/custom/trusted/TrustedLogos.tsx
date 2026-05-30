@@ -48,35 +48,41 @@ export default function TrustedLogos() {
         <div className="trusted__logos">
           <div className="trusted__logo-item">
             <Image
-              src="/images/logos-restaurante-2.png"
-              alt="Restaurant Logo"
-              width={138}
-              height={80}
-              style={{ height: "60px", width: "auto" }}
+              src="/images/trusted-1.jpg"
+              alt="40 Years of Experience"
+              width={120}
+              height={120}
+              style={{ height: "120px", width: "auto", objectFit: "contain" }}
             />
           </div>
           <div className="trusted__logo-item">
             <Image
-              src="/images/logo-joia-beach.png"
-              alt="Joia Beach Logo"
-              width={265}
-              height={80}
-              style={{ height: "60px", width: "auto" }}
+              src="/images/trusted-2.png"
+              alt="Military Discounts — Active & Retired"
+              width={120}
+              height={120}
+              style={{ height: "120px", width: "auto", objectFit: "contain" }}
             />
           </div>
           <div className="trusted__logo-item">
             <Image
-              src="/images/logos-restaurante-1.png"
-              alt="Restaurant Logo"
-              width={118}
-              height={78}
-              style={{ height: "60px", width: "auto" }}
+              src="/images/trusted-3.png"
+              alt="Senior Discounts Now Available"
+              width={120}
+              height={120}
+              style={{ height: "120px", width: "auto", objectFit: "contain" }}
+            />
+          </div>
+          <div className="trusted__logo-item">
+            <Image
+              src="/images/trusted-4.jpg"
+              alt="100% Satisfaction Guaranteed"
+              width={120}
+              height={120}
+              style={{ height: "120px", width: "auto", objectFit: "contain" }}
             />
           </div>
         </div>
-        <p className="trusted__disclaimer text-center text-xs mt-4">
-          Logos are property of their respective owners and used for identification only.
-        </p>
       </div>
     </section>
   );

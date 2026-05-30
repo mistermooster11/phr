@@ -12,8 +12,8 @@ export default function Footer() {
             <Image
               src="/images/phr-logo.png"
               alt="Professional Home Remodeling Inc."
-              width={239}
-              height={58}
+              width={143}
+              height={35}
               className="footer__logo"
               style={{ height: "auto" }}
             />

@@ -40,8 +40,7 @@ export default function AboutSection() {
         <div className="about__content">
           <div className="about__label">About Us</div>
           <h2 className="about__heading">
-            Professional Home Remodeling — Queens, Brooklyn & Long Island
-            broward &amp; Palm beach
+            Professional Home Remodeling — Queens, Brooklyn &amp; Long Island
           </h2>
           <p className="about__text">
             Professional Home Remodeling Inc. provides expert kitchen remodeling,
@@ -81,7 +80,7 @@ export default function AboutSection() {
         <div className="about__media">
           <div className="about__img-wrap">
             <Image
-              src="/images/about-row.webp"
+              src="/images/gc-about.jpg"
               alt="Professional Home Remodeling Inc. team"
               width={690}
               height={613}

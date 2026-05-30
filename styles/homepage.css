@@ -620,6 +620,16 @@
   flex-direction: column;
 }
 
+.pricing-card__starting-at {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  margin-bottom: 2px;
+  opacity: 0.75;
+}
+
 .pricing-card__price-row {
   display: flex;
   align-items: flex-start;

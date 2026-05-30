@@ -25,7 +25,7 @@ export const services: Service[] = [
   {
     number: "01",
     title: "Kitchen Remodeling",
-    image: "https://www.phr-ny.com/images/kitchen_carousel_1.jpg",
+    image: "/images/gc-service-kitchen.jpg",
     href: "/kitchen-remodeling",
     width: 535,
     height: 643,
@@ -33,7 +33,7 @@ export const services: Service[] = [
   {
     number: "02",
     title: "Bathroom Remodeling",
-    image: "https://www.phr-ny.com/images/bathroom_carousel_1.jpg",
+    image: "/images/gc-service-bathroom.jpg",
     href: "/bathroom-remodeling",
     width: 535,
     height: 643,
@@ -41,7 +41,7 @@ export const services: Service[] = [
   {
     number: "03",
     title: "Roofing",
-    image: "https://www.phr-ny.com/images/masonry_carousel_1.jpg",
+    image: "/images/gc-service-roofing.jpg",
     href: "/roofing",
     width: 535,
     height: 643,
@@ -49,7 +49,7 @@ export const services: Service[] = [
   {
     number: "04",
     title: "Siding & Windows",
-    image: "https://www.phr-ny.com/images/siding_carousel_1.jpg",
+    image: "/images/gc-service-siding.jpg",
     href: "/siding-windows",
     width: 535,
     height: 643,
