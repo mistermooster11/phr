@@ -7,9 +7,9 @@ import TestimonialsSection from "@/components/custom/testimonials/TestimonialsSe
 import CTAFormSection from "@/components/custom/cta/CTAFormSection";
 
 export const metadata: Metadata = {
-  title: "Our Services — UnclogMe | Grease Trap & Drain Unclogging Miami",
+  title: "Our Services | Kitchen, Bathroom, Roofing, Siding & More",
   description:
-    "Explore UnclogMe's full range of services: grease trap cleaning, residential & commercial unclogging, and camera inspections across Miami-Dade.",
+    "Full-service home remodeling by Professional Home Remodeling Inc. — kitchen remodeling, bathroom renovations, roofing, siding, masonry, and basement waterproofing across Queens, Brooklyn, Nassau & Suffolk.",
 };
 
 export default function ServicesPage() {
@@ -17,7 +17,7 @@ export default function ServicesPage() {
     <>
       <PageHeroSection
         title="Our Services"
-        subtitle="Professional grease trap cleaning and drain unclogging services — residential and commercial — across Miami-Dade, Broward & Palm Beach."
+        subtitle="Kitchen remodeling, bathroom renovations, roofing, siding, masonry, and basement waterproofing — serving Queens, Brooklyn, Nassau, Suffolk & Westchester."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services" },

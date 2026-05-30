@@ -1,6 +1,6 @@
 /* =================================================
    INNER PAGES CSS — shared across all non-homepage pages
-   unclogme.com clone
+   Professional Home Remodeling Inc.
    ================================================= */
 
 /* ─── SERVICE DETAIL (sidebar + main layout) ────── */
@@ -429,86 +429,6 @@
   }
 }
 
-/* ─── BECOME AN UNCLOGGER ───────────────────────── */
-.become-section {
-  padding: 80px 20px;
-  background: var(--color-white);
-}
-
-.become-section__inner {
-  max-width: 860px;
-  margin: 0 auto;
-}
-
-.become-section__intro {
-  font-size: 1.05rem;
-  color: var(--color-text);
-  line-height: 1.75;
-  margin-bottom: 48px;
-  text-align: center;
-}
-
-.become-section__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
-  margin-bottom: 48px;
-}
-
-.become-card {
-  background: var(--color-dark);
-  padding: 28px;
-  border-left: 4px solid var(--color-accent);
-}
-
-.become-card__num {
-  font-size: 2rem;
-  font-weight: 900;
-  color: var(--color-accent);
-  line-height: 1;
-  margin-bottom: 10px;
-}
-
-.become-card__title {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--color-white);
-  margin-bottom: 8px;
-}
-
-.become-card__text {
-  font-size: 0.9rem;
-  color: var(--color-light-gray);
-  line-height: 1.65;
-}
-
-.become-section__cta {
-  text-align: center;
-}
-
-.become-section__cta-btn {
-  display: inline-block;
-  background-color: var(--color-accent);
-  color: var(--color-white);
-  font-size: 15px;
-  font-weight: 700;
-  padding: 16px 48px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  border: 2px solid var(--color-accent);
-  transition: background-color 0.25s, color 0.25s;
-}
-
-.become-section__cta-btn:hover {
-  background-color: transparent;
-  color: var(--color-accent);
-}
-
-@media (max-width: 575px) {
-  .become-section__grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* ── Contact Map ─────────────────────────────────────── */
 .contact-map {

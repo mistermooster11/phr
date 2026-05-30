@@ -148,7 +148,7 @@ export default function CTAFormSection() {
           <p className="cta-form__text">
             We also handle emergency repairs — roof leaks, basement flooding, and storm damage.
             
-            Call (516) 636-5300 (Nassau) or (718) 316-9221 (NYC \operation running without interruptions. Westchester) for a fast response.
+            Call (516) 636-5300 (Nassau &amp; Suffolk) or (718) 316-9221 (NYC &amp; Westchester) for a fast response.
           </p>
           <h6 className="cta-form__why-title">Why Choose Us</h6>
           <div className="cta-form__why-grid">

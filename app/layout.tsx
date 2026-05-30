@@ -39,9 +39,9 @@ export const metadata: Metadata = {
       "Family-run home remodeling company with 40+ years serving NYC and Long Island. Kitchens, bathrooms, roofing, siding, windows, masonry & more. Free estimates. GAF Certified. A+ BBB.",
     images: [
       {
-        url: "https://www.phr-ny.com/images/kitchen_carousel_1.jpg",
-        width: 1600,
-        height: 1200,
+        url: `${SITE_URL}/images/gc-service-kitchen.jpg`,
+        width: 1200,
+        height: 800,
         alt: "Professional Home Remodeling Inc. — home remodeling in Queens, Brooklyn & Nassau County",
       },
     ],
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "Professional Home Remodeling Inc. | NYC & Long Island",
     description:
       "40+ years of kitchens, bathrooms, roofing, siding & masonry across Queens, Brooklyn, Nassau & Westchester. Free estimates. (516) 636-5300.",
-    images: ["https://www.phr-ny.com/images/kitchen_carousel_1.jpg"],
+    images: [`${SITE_URL}/images/gc-service-kitchen.jpg`],
   },
   alternates: { canonical: SITE_URL },
   robots: {
@@ -66,8 +66,8 @@ const localBusinessSchema = {
   "@type": "HomeAndConstructionBusiness",
   name: "Professional Home Remodeling Inc.",
   url: SITE_URL,
-  logo: "https://www.phr-ny.com/images/professional_logo_WEB_copy3.jpg",
-  image: "https://www.phr-ny.com/images/kitchen_carousel_1.jpg",
+  logo: `${SITE_URL}/images/phr-logo.png`,
+  image: `${SITE_URL}/images/gc-service-kitchen.jpg`,
   description:
     "Family-run home remodeling company serving Queens, Brooklyn, the Bronx, Nassau County, Suffolk County, and Westchester with 40+ years of experience.",
   telephone: ["+1-516-636-5300", "+1-718-316-9221"],
