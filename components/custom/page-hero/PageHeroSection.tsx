@@ -51,11 +51,7 @@ export default function PageHeroSection({
   return (
     <section
       className="page-hero"
-      style={
-        bgImage
-          ? { backgroundImage: `url(${bgImage})` }
-          : undefined
-      }
+      style={sectionStyle}
     >
       <div className="page-hero__inner" ref={innerRef}>
         {breadcrumbs && breadcrumbs.length > 0 && (
