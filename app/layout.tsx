@@ -4,6 +4,7 @@ import "@/styles/common.css";
 import Header from "@/components/custom/header/Header";
 import Footer from "@/components/custom/footer/Footer";
 import PageTransition from "@/components/custom/page-transition/PageTransition";
+import SalePopup from "@/components/custom/popup/SalePopup"
 
 const SITE_URL = "https://www.phr-ny.com";
 
@@ -141,6 +142,7 @@ export default function RootLayout({
       </head>
       <body>
         <PageTransition />
+        <SalePopup businessName="Professional Home Remodeling Inc." expiryDate="June 7, 2026" trade="remodeling contractors" />
         <Header />
         <main>{children}</main>
         <Footer />
