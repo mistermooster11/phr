@@ -9,7 +9,7 @@ export type PricingCard = {
 
 export const pricingCards: PricingCard[] = [
   {
-    price: 8000,
+    price: 2700,
     note: "Free written estimate — no obligation",
     title: "Kitchen Remodeling",
     features: [
@@ -23,7 +23,7 @@ export const pricingCards: PricingCard[] = [
       "Complete kitchen renovations designed around what you want. From the studs up — or a targeted refresh. We walk you through every option before any work begins.",
   },
   {
-    price: 5000,
+    price: 1700,
     note: "Free written estimate — no obligation",
     title: "Bathroom Remodeling",
     features: [
@@ -38,7 +38,7 @@ export const pricingCards: PricingCard[] = [
     highlight: true,
   },
   {
-    price: 3500,
+    price: 1200,
     note: "Free written estimate — no obligation",
     title: "Roofing",
     features: [
@@ -52,7 +52,7 @@ export const pricingCards: PricingCard[] = [
       "GAF Certified roof installations and repairs. We work with your insurance adjuster on storm damage claims. Emergency response available across all service areas.",
   },
   {
-    price: 4000,
+    price: 1300,
     note: "Free written estimate — no obligation",
     title: "Siding & Windows",
     features: [
